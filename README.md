@@ -1,51 +1,51 @@
 # Play Code
 
-PlayCode is a video post control API whose main focus is on information technology
+PlayCode é uma API voltada totalmente para a tecnologia, onde há controle de postagem de vídeos sobre o assunto, onde você também pode interagir com outros usuários via chat.
 
-# Documentation & API
+# API & Documentação
 
-The documentation is part of the api, so use the endpoints shown in the documentation in the same url.
-You can find the API documentation [here](https://playcodeapi.herokuapp.com/).
+A API foi desenvolvida em Node.js, utilizando TypeScript para tipagem de dados.
+Você pode encontrar a documentação da API [aqui](https://playcodeapi.herokuapp.com/).
 
-# Getting Started
+# Instalação e Execução
 
-### To install locally on your machine clone the repository:
+### Primeiramente, baixe o respositório via terminal utilizando o seguinte comando:
 
 ```bash
-git clone git@gitlab.com:estevan2/playcode-api.git
+git clone https://github.com/odaairlopes/playcode-api.git
 ```
 
-### Access the created clone folder:
+### Após baixar, acesse o clone do repositório:
 
 ```bash
 cd playcode-api
 ```
 
-### Install project dependencies:
+### Instale as dependências do projeto
 
 ```bash
 yarn
 ```
 
-### Start the database with [docker](https://www.docker.com/):
+### Inicie o banco de dados junto com o [docker](https://www.docker.com/):
 
 ```bash
 sudo docker-compose up -d
 ```
 
-### Apply migrations to the database:
+### Aplique as _migrations_ no banco de dados:
 
 ```bash
 yarn typeorm migration:run
 ```
 
-### Start the application:
+### Por fim, rode o projeto com o seguinte comando:
 
 ```bash
 yarn dev
 ```
 
-### If this is the terminal's response, your application is running fine on localhost:3000.
+### Se a resposta no terminal for esta, o aplicativo estará rodando em localhost:3000.
 
 ```bash
 yarn run v1.22.17
@@ -54,3 +54,14 @@ $ tsnd --transpile-only --respawn --ignore-watch node_modules src/server.ts
 [app] Connect at Database
 [app] server running at http://localhost:3000
 ```
+
+## Tecnologias utilizadas:
+
+- [Node.js](https://nodejs.org/en/)
+- [TypeScript](https://www.typescriptlang.org)
+- [TypeORM](https://typeorm.io)
+- [Docker](https://www.docker.com)
+- [Swagger](https://swagger.io)
+- [bcryptjs](https://www.npmjs.com/package/bcryptjs)
+- [jsonwebtoken](https://jwt.io)
+- [socket.io](https://socket.io)
